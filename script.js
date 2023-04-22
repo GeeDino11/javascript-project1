@@ -39,11 +39,9 @@ function idCard() {
     "postFullName"
   ).innerHTML = `${firstName} ${lastName}`;
 
-  if (address !== "") {
-    document.getElementById("postAddress").innerHTML = `Address: ${address}`;
-  } else {
-    document.getElementById("postAddress").innerHTML = ``;
-  }
+  address !== ""
+    ? (document.getElementById("postAddress").innerHTML = `Address: ${address}`)
+    : (document.getElementById("postAddress").innerHTML = ``);
 
   document.getElementById("idCard").style.display = "block";
   document.getElementById("h2").style.display = "none";
