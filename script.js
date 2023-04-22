@@ -54,5 +54,6 @@ function idCard() {
     phoneNumber == ""
   ) {
     document.getElementById("idCard").style.display = "none";
+    document.getElementById("h2").style.display = "block";
   }
 }
