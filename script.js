@@ -47,4 +47,14 @@ function idCard() {
 
   document.getElementById("idCard").style.display = "block";
   document.getElementById("h2").style.display = "none";
+
+  if (
+    firstName == "" &&
+    lastName == "" &&
+    address == "" &&
+    age == "" &&
+    phoneNumber == ""
+  ) {
+    document.getElementById("idCard").style.display = "none";
+  }
 }
