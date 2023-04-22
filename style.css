@@ -19,7 +19,7 @@ img {
   border-radius: 20px;
   height: 14em;
   width: 25em;
-  margin: auto;
+  margin: auto 5px;
   margin-top: 50px;
   background: linear-gradient(
     127deg,
