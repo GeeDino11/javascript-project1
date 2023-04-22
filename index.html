@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Get ID Card</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tangerine:wght@1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>"Let's Create an ID card!"</h1>
+
+    <form>
+      <label for="firstName">First Name: </label><br />
+      <input type="text" id="firstName" required /><br />
+      <label for="lastName">Last Name: </label><br />
+      <input type="text" id="lastName" required /><br />
+      <label for="age">Age: </label><br />
+      <input type="number" id="age" required /><br />
+      <label for="phoneNumber">Phone Number: </label><br />
+      <input type="text" id="phoneNumber" required /><br />
+      <label for="address">Address: </label><br />
+      <input type="text" id="address" required /><br />
+    </form>
+    <button type="submit" id="button" onclick="idCard()">Get ID Card!</button
+    ><br />
+
+    <div id="idCard">
+      <img
+        src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg"
+      />
+
+      <p id="postFullName"></p>
+
+      <div id="post">
+        <p id="postAge"></p>
+
+        <p id="postPhoneNumber"></p>
+
+        <p id="postAddress"></p>
+      </div>
+    </div>
+    <br />
+    <h2 id="h2">Your ID Card will appear here!!</h2>
+    <footer>Created By: <br />Matthew Gerardino</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
