@@ -9,7 +9,7 @@ function idCard() {
   numberArray.push(age, phoneNumber);
   if (age !== "") {
     for (let i = 0; i < numberArray.length; i++) {
-      if (numberArray[i] <= 100 && numberArray[i] > 0) {
+      if (numberArray[i] <= 100) {
         document.getElementById("postAge").innerHTML = `Age: ${age}`;
       } else if (parseInt(numberArray[i]) > 100) {
         document.getElementById(
